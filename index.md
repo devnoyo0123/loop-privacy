@@ -3,7 +3,7 @@
 
 ## 한국어
 
-**최종 수정: 2026-11-01 · 버전 1.1** (근거리 공유 추가)
+**최종 수정: 2026-11-01 · 버전 1.2** (근거리 공유 — Loop 공유)
 
 Loop(이하 "앱")은 기기 안에서만 동작하는 기록 앱입니다. 최소한의 정보만 수집하며, 회원가입이나 계정이 없습니다.
 
@@ -21,8 +21,8 @@ Loop(이하 "앱")은 기기 안에서만 동작하는 기록 앱입니다. 최�
 
 ### 2-1. 근거리 공유
 
-- **동작**: 사용자가 기록 사슬의 "사슬 공유 → 가까운 기기로 보내기"를 실행하고 목록에서 받을 기기를 고르면, Google Play 서비스의 Nearby Connections(블루투스·Wi-Fi Direct 등)를 통해 기기끼리 직접 전송합니다. 개발자 서버를 거치지 않으며 개발자는 내용을 볼 수 없습니다.
-- **상대에게 전달되는 것**: 선택한 사슬의 기록 본문, 사진·동영상(보내기 전에 뺄 수 있음), 반복 설정, 공유 표시명과 무작위 기기 식별자. **위치 정보(좌표·장소)는 기본으로 제외**되며, 사용자가 포함하도록 바꿨을 때만 함께 갑니다.
+- **동작**: 사용자가 기록의 "Loop 공유 → 가까운 기기로 보내기"를 실행하고 목록에서 받을 기기를 고르면, Google Play 서비스의 Nearby Connections(블루투스·Wi-Fi Direct 등)를 통해 기기끼리 직접 전송합니다. 개발자 서버를 거치지 않으며 개발자는 내용을 볼 수 없습니다.
+- **상대에게 전달되는 것**: 선택한 기록(이어진 기록이 있으면 그 사슬 전체)의 본문, 사진·동영상(보내기 전에 뺄 수 있음), 반복 설정, 공유 표시명과 무작위 기기 식별자. **위치 정보(좌표·장소)는 기본으로 제외**되며, 사용자가 포함하도록 바꿨을 때만 함께 갑니다.
 - **받기**: 설정의 "가까운 기기에서 받기"를 켠 동안, 앱이 열려 있을 때 주변 Loop 기기에 공유 표시명이 보입니다. 받은 기록은 사용자가 [가져오기]를 눌러야 저장되며, [거절]하면 저장되지 않습니다.
 - **임시 파일**: 전송 중 파일은 앱 전용 저장 공간에만 두고, 전송이 끝나거나 중단되면 삭제합니다(설정 › 공유 임시 파일 정리로 직접 지울 수도 있음).
 - 상대 기기로 넘어간 기록은 상대가 관리하며, 보낸 쪽에서 회수할 수 없습니다.
@@ -64,7 +64,7 @@ Loop(이하 "앱")은 기기 안에서만 동작하는 기록 앱입니다. 최�
 
 ## English
 
-**Last updated: November 1, 2026 · Version 1.1** (nearby sharing added)
+**Last updated: November 1, 2026 · Version 1.2** (nearby sharing — Share Loop)
 
 Loop (the "App") is a journaling app that works entirely on your device. There is no sign-up and no account.
 
@@ -82,8 +82,8 @@ Loop (the "App") is a journaling app that works entirely on your device. There i
 
 ### 2-1. Nearby sharing
 
-- **How it works**: When you choose "Share chain → Send to a nearby device" and pick a receiving device from the list, the logs are transferred device-to-device through Google Play services' Nearby Connections (Bluetooth, Wi-Fi Direct, etc.). Nothing passes through the developer's servers, and the developer cannot see the content.
-- **What the other person receives**: the text of the selected chain, photos and videos (you can leave them out before sending), repeat settings, your sharing display name and random device identifier. **Location (coordinates and place) is excluded by default** and is sent only if you choose to include it.
+- **How it works**: When you choose "Share Loop → Send to a nearby device" on a log and pick a receiving device from the list, the logs are transferred device-to-device through Google Play services' Nearby Connections (Bluetooth, Wi-Fi Direct, etc.). Nothing passes through the developer's servers, and the developer cannot see the content.
+- **What the other person receives**: the text of the selected log (and the whole chain if other logs continue from it), photos and videos (you can leave them out before sending), repeat settings, your sharing display name and random device identifier. **Location (coordinates and place) is excluded by default** and is sent only if you choose to include it.
 - **Receiving**: While "Receive from nearby devices" is on in Settings and the app is open, nearby Loop devices can see your display name. Received logs are saved only if you tap Import; if you decline, nothing is saved.
 - **Temporary files**: Files in transit are kept only in the app's private storage and deleted when a transfer finishes or stops (you can also clear them in Settings › Clear sharing temp files).
 - Logs delivered to another device are managed by its owner and cannot be recalled by the sender.
