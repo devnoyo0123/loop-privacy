@@ -1,4 +1,6 @@
 # Loop 개인정보처리방침 · Privacy Policy
+
+[서비스 약관 · Terms of Service](/loop-privacy/terms)
 ---
 
 ## 한국어
